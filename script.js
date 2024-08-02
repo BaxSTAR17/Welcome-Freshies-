@@ -157,7 +157,8 @@ const messages = [
     "Trojan Virus detected!",
     "69 malware detected",
     "Not in my christian minecraft server!",
-    "Please DON'T KISS THE WATER FOUNTAIN!"
+    "Please DON'T KISS THE WATER FOUNTAIN!",
+    "https://dayssincelastjavascriptframework.com/"
 ];
 const watery = [
     "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc29mbGc1Z2djZ3hrN2ZyM2tjNDY3Y3Z5bDI5YzJsZmpva2E5ZXhxbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lkceXNDw4Agryfrwz8/giphy.gif",
@@ -235,29 +236,71 @@ function themer(t) {
     switch(t) {
         case 'w':
             document.querySelector('main.wrap').style.backgroundImage = `url("${watery[trng]}")`;
-            // rooty.style.setProperty('--prim', 'rgb(65, 85, 128)');
-            // rooty.style.setProperty('--primT', 'rgba(65, 85, 128, 0.4)');
-            // rooty.style.setProperty('--lightprim', 'rgb(136, 152, 187)');
-            // rooty.style.setProperty('--darkprim', 'rgb(19, 22, 43)');
-            // rooty.style.setProperty('--monochrom', white);
-            // rooty.style.setProperty('--monocont', black);
-            // rooty.style.setProperty('--monochromT', '#FFFFFFSS');
+            rooty.style.setProperty('--prim', 'rgb(65, 85, 128)');
+            rooty.style.setProperty('--primT', 'rgba(65, 85, 128, 0.4)');
+            rooty.style.setProperty('--lightprim', 'rgb(136, 152, 187)');
+            rooty.style.setProperty('--darkprim', 'rgb(19, 22, 43)');
+            rooty.style.setProperty('--monochrom', 'white');
+            rooty.style.setProperty('--monocont', 'black');
+            rooty.style.setProperty('--monochromT', '#FFFFFFSS');
+            rooty.style.setProperty('--keybbot', 'rgb(64, 70, 87)');
+            rooty.style.setProperty('--keybright', 'rgb(156, 169, 202)');
+            rooty.style.setProperty('--keybleft', 'rgb(87, 100, 131)');
+            rooty.style.setProperty('--keybtop', 'rgb(39, 40, 44)');
+            rooty.style.setProperty('--keybg', 'linear-gradient(90deg, rgb(50, 60, 77), rgb(112, 118, 138))');
+            document.querySelector('div.mainwelcome').style.background = "linear-gradient(var(--prim), var(--darkprim))";
+            document.querySelector('.meetcsc.events').style.background = "linear-gradient(var(--monochromT), transparent, var(--monochromT))";
             break;
         case 'm':
             document.querySelector('main.wrap').style.backgroundImage = `url("${morning[trng]}")`;
-            // rooty.style.setProperty('--prim', 'lightgoldenyellow');
-            // rooty.style.setProperty('--primT', '#FAFAD266');
-            // rooty.style.setProperty('--lightprim', '#EEEEEE');
-            // rooty.style.setProperty('--darkprim', 'tan');
-            // rooty.style.setProperty('--monochrom', 'black');
-            // rooty.style.setProperty('--monocont', 'white');
-            // rooty.style.setProperty('--monochromT', '#000000SS');
+            rooty.style.setProperty('--prim', '#EEEEEE');
+            rooty.style.setProperty('--primT', '#FAFAD266');
+            rooty.style.setProperty('--lightprim', 'lightgoldenrodyellow');
+            rooty.style.setProperty('--darkprim', '#DDDDDD');
+            rooty.style.setProperty('--monochrom', 'black');
+            rooty.style.setProperty('--monocont', 'white');
+            rooty.style.setProperty('--monochromT', '#000000SS');
+            rooty.style.setProperty('--keybbot', '#BBBBBB');
+            rooty.style.setProperty('--keybright', '#EEEEEE');
+            rooty.style.setProperty('--keybleft', '#AAAAAA');
+            rooty.style.setProperty('--keybtop', 'gray');
+            rooty.style.setProperty('--keybg', 'linear-gradient(90deg, #DFDFDF, #A8A8A8)');
+            document.querySelector('div.mainwelcome').style.background = "linear-gradient(var(--prim), var(--darkprim))";
+            document.querySelector('.meetcsc.events').style.background = "linear-gradient(var(--monochromT), transparent, var(--monochromT))";
             break;
         case 'a':
             document.querySelector('main.wrap').style.backgroundImage = `url("${afternoon[trng]}")`;
+            rooty.style.setProperty('--prim', 'coral');
+            rooty.style.setProperty('--primT', '#E9967A66');
+            rooty.style.setProperty('--lightprim', 'pink');
+            rooty.style.setProperty('--darkprim', 'darksalmon');
+            rooty.style.setProperty('--monochrom', 'black');
+            rooty.style.setProperty('--monocont', 'white');
+            rooty.style.setProperty('--monochromT', '#000000SS');
+            rooty.style.setProperty('--keybbot', '#5e473d');
+            rooty.style.setProperty('--keybright', '#d47461');
+            rooty.style.setProperty('--keybleft', '#8a564c');
+            rooty.style.setProperty('--keybtop', '#402e27');
+            rooty.style.setProperty('--keybg', 'linear-gradient(90deg, #4a3d3a,#8c6a62)');
+            document.querySelector('div.mainwelcome').style.background = "linear-gradient(var(--prim), var(--darkprim))";
+            document.querySelector('.meetcsc.events').style.background = "linear-gradient(var(--monochromT), transparent, var(--monochromT))";
             break;
         case 'n':
             document.querySelector('main.wrap').style.backgroundImage = `url("${night[trng]}")`;
+            rooty.style.setProperty('--prim', '#555555');
+            rooty.style.setProperty('--primT', '#69696966');
+            rooty.style.setProperty('--lightprim', 'dimgray');
+            rooty.style.setProperty('--darkprim', '#111111');
+            rooty.style.setProperty('--monochrom', 'white');
+            rooty.style.setProperty('--monocont', 'black');
+            rooty.style.setProperty('--monochromT', '#FFFFFFSS');
+            rooty.style.setProperty('--keybbot', '#444444');
+            rooty.style.setProperty('--keybright', '#AAAAAA');
+            rooty.style.setProperty('--keybleft', '#666666');
+            rooty.style.setProperty('--keybtop', '#222222');
+            rooty.style.setProperty('--keybg', 'linear-gradient(90deg, #202020, #696969)');
+            document.querySelector('div.mainwelcome').style.background = "linear-gradient(var(--prim), var(--darkprim))";
+            document.querySelector('.meetcsc.events').style.background = "linear-gradient(var(--monochromT), transparent, var(--monochromT))";
             break;
     }
 }

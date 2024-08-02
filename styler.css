@@ -9,6 +9,11 @@
     --mx: 0; --my: 0;
     --monochromT: #FFFFFF55;
     --bpm: 0s;
+    --keybtop: rgb(39, 40, 44);
+    --keybbot: rgb(64, 70, 87);
+    --keybleft: rgb(87, 100, 131);
+    --keybright: rgb(156, 169, 202);
+    --keybg: linear-gradient(90deg, rgb(50, 60, 77), rgb(112, 118, 138));
 }
 
 @font-face {
@@ -143,7 +148,7 @@ section.keyrack {
     display: flex;
     width: 400px;
     height: 100px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4), 3px 3px 8px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px 0 var(--monocont), 3px 3px 8px 4px var(--monocont);
     background-color: #202420;
     animation: beat var(--bpm) infinite linear;
 }
@@ -155,11 +160,11 @@ button.key {
     font-size: 0.6em;
     font-weight: bold;
     font-family: url(./United\ Kingdom\ DEMO.otf);
-    border-bottom: 20px inset #444444;
-    border-right: 20px outset #AAAAAA;
-    border-left: 20px inset #666666;
-    border-top: 20px outset #222222;
-    background: linear-gradient(90deg, #202020, #696969);
+    border-bottom: 20px inset var(--keybbot);
+    border-right: 20px outset var(--keybright);
+    border-left: 20px inset var(--keybleft);
+    border-top: 20px outset var(--keybtop);
+    background: var(--keybg);
     transition: all 0.04s linear;
 }
 
@@ -471,13 +476,13 @@ div.jukestage {
 }
 
 .juker {
-    color: white; 
+    color: var(--monochrom); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     font-size: 0.7em; 
     font-weight: bold;
     animation: levit 1s alternate infinite ease-in-out;
 }
-.songer {color: white; font-family: UK; font-size: 1.2em; text-shadow: 3px 3px 3px var(--darkprim);}
+.songer {color: var(--monochrom); font-family: UK; font-size: 1.2em; text-shadow: 3px 3px 3px var(--darkprim);}
 .dj{color:var(--monochrom); font-size: 0.4em;}
 
 hr {width: 100%; color: var(--monochrom); }
