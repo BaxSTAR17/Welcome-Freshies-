@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome CCS Freshie!</title>
+    <link rel="stylesheet" href="./styler.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <main class="wrap">
+        <br>
+        <h1 class="title" id="msgbox">></h1>
+        <section class="keyrack">
+            <button class="key pressed" id="one" onclick="changePage(this.id)">HOME</button>
+            <button class="key" id="two" onclick="changePage(this.id)">CONFED</button>
+            <button class="key" id="thr" onclick="changePage(this.id)">EVENTS</button>
+            <button class="key" id="four" onclick="changePage(this.id)">COURSES</button>
+        </section>
+        <section class="page">
+            <div class="pg one">
+                <div class="mainwelcome">
+                    Welcome, Freshies
+                </div>
+                <div class="meetcsc home">FAQ</div>
+                <div class="faqholder">
+                    <details class="faqs">
+                        <summary class="quest">Where can I contact CCS?</summary>
+                        <p class="answer">
+                            CCS Facebook Page: https://www.facebook.com/sillimancomputerstudies <br>
+                            CCS Landline: +035 420-1901 local 345 <br>
+                            CCS Email: ccs@su.edu.ph <br>
+                            
+                        </p>
+                    </details>
+                    <!-- <details class="faqs">
+                        <summary class="quest">Where is the _____?</summary>
+                    </details> -->
+                    <details class="faqs">
+                        <summary class="quest">What programming languages will we learn?</summary>
+                        <p class="answer">
+                            For your freshman year, You will be learning web development for your major subject, CCS 1 and that includes languages like HTML, CSS, JavaScript and also some PHP. You will also be learning the C programming language for your other major subject, CCS 2.
+                        </p>
+                    </details>
+                    <details class="faqs">
+                        <summary class="quest">It's all Math?</summary>
+                        <p class="answer">
+                            Short Answer is No. Long Answer is, while a lot of concepts of math is involved in this field, it will only serve as an asset and a tool to a much more needed skill and concept for computer studies and that is Problem Solving. So knowledge and proficiency in math CAN be helpful, but it is not what this college revolves around.
+                        </p>
+                    </details>
+                    <details class="faqs">
+                        <summary class="quest">Should I use ChatGPT?</summary>
+                        <p class="answer">
+                            ChatGPT must only be treated as a tool to further learn, it is not recommended to use it for automatic and handicapped labor. Especially in asking for ChatGPT to generate code, which is still very much susceptible and vulnerable to bugs.
+                        </p>
+                    </details>
+                    <details class="faqs">
+                        <summary class="quest">Do I need a laptop?</summary>
+                        <p class="answer">
+                            No. You'll do all the programming, coding and activities inside the laboratories which has tons of computers. Laptops are only useful for being able to do your projects and activities anywhere else than your home.
+                        </p>
+                    </details>
+                    <details class="faqs">
+                        <summary class="quest">Do we write code on paper?</summary>
+                        <p class="answer">
+                            Yes but most of the time, this only happens during tests, not necessarily activities or projects, everything else is to be typed and encoded.
+                        </p>
+                    </details>
+                    <details class="faqs">
+                        <summary class="quest">Are we gonna make games?</summary>
+                        <p class="answer">
+                            Sometimes, and while there is a Game Development Elective Track for BSIT students in the future years, The college will not always focus on game development and will branch out more onto the technical and computing side of things.
+                        </p>
+                    </details>
+                    <details class="faqs">
+                        <summary class="quest">Are we gonna make sites?</summary>
+                        <p class="answer">
+                            Yes, especially during your CCS 1 and GE10 subject
+                        </p>
+                    </details>
+                    <details class="faqs">
+                        <summary class="quest">Are we gonna learn how to hack?</summary>
+                        <p class="answer">
+                            ...why would you- I mean.. Anyway, No, not necessarily... Not yet perhaps
+                        </p>
+                    </details>
+                    <!-- <details class="faqs">
+                        <summary class="quest">What is C?</summary>
+                    </details> -->
+                    <details class="faqs">
+                        <summary class="quest">Is this the perfect course for me?</summary>
+                        <p class="answer">
+                            There's no better way of knowing other than to just do it!, If you're new to the tech field, that's fine!, Education and knowledge in the tech field is VERY accessible for everyone in the internet and even you might be interested!, the tech world welcomes anyone. As long as you have the passion to learn and the motivation to face the rabbitholes of this field, you'll survive anything in your way!
+                        </p>
+                    </details>
+                </div>
+                <button class="wannaccs" onclick="showHistory()">
+                Wanna learn more about ccs?</button>
+                <section class="historyccs">
+                    <div class="infoblock" id="bl" style="--n: 1;--bgx: 0; --bgy: 0;"></div>
+                    <div class="infoblock" id="bl" style="--n: 2;--bgx: 3; --bgy: 0;"></div>
+                    <div class="infoblock" id="bl" style="--n: 3;--bgx: 2; --bgy: 0;"></div>
+                    <div class="infoblock" id="bl" style="--n: 4;--bgx: 1; --bgy: 0;"></div>
+                    <div class="infoblock" id="br" style="--n: 8;--bgx: 0; --bgy: 4;"></div>
+                    <div class="infoblock" id="br" style="--n: 7;--bgx: 3; --bgy: 4;"></div>
+                    <div class="infoblock" id="br" style="--n: 6;--bgx: 2; --bgy: 4;"></div>
+                    <div class="infoblock" id="br" style="--n: 5;--bgx: 1; --bgy: 4;"></div>
+                    <div class="infoblock" id="bl" style="--n: 9;--bgx: 0; --bgy: 3;"></div>
+                    <div class="infoblock" id="bl" style="--n: 10;--bgx: 3; --bgy: 3;"></div>
+                    <div class="infoblock" id="bl" style="--n: 11;--bgx: 2; --bgy: 3;"></div>
+                    <div class="infoblock" id="bl" style="--n: 12;--bgx: 1; --bgy: 3;"></div>
+                    <div class="infoblock" id="br" style="--n: 16;--bgx: 0; --bgy: 2;"></div>
+                    <div class="infoblock" id="br" style="--n: 15;--bgx: 3; --bgy: 2;"></div>
+                    <div class="infoblock" id="br" style="--n: 14;--bgx: 2; --bgy: 2;"></div>
+                    <div class="infoblock" id="br" style="--n: 13;--bgx: 1; --bgy: 2;"></div>
+                    <div class="infoblock" id="bl" style="--n: 17;--bgx: 0; --bgy: 1;"></div>
+                    <div class="infoblock" id="bl" style="--n: 18;--bgx: 3; --bgy: 1;"></div>
+                    <div class="infoblock" id="bl" style="--n: 19;--bgx: 2; --bgy: 1;"></div>
+                    <div class="infoblock" id="bl" style="--n: 20;--bgx: 1; --bgy: 1;"></div>
+                </section>
+                <div class="meetcsc home">COLLEGE AIMS</div>
+                <br>
+                <div class="visionbanner">VISION</div>
+                <hr>
+                <p class="visiondesc">A leading Christian institution in library, information and computing and a center of excellence in research and education in Southeast Asia.</p>
+                <div class="missionbanner">MISSION</div>
+                <hr>
+                <div class="msdescholder">
+                    <div class="missiondesc">Offer information and computing programs that provide concrete theoretical, ethical, spiritual and experimental grounds for research, internships and multi- disciplinary programs</div>
+                    <div class="missiondesc">Conduct research for development and societal progress</div>
+                    <div class="missiondesc">Foster graduates to possess leadership skills and social consciousness</div>
+                    <div class="missiondesc">Provide professional expertise in partnerships with industries, educational institutions and organizations to improve quality of life</div>
+                </div>
+                <br>
+                <div class="goalsbanning">
+                    <div class="goalsbanner">GOALS</div>
+                    <div class="goalsbanner gol gl" style="--emd: 1">GOALS</div>
+                    <div class="goalsbanner gol gr" style="--emd: 1">GOALS</div>
+                    <div class="goalsbanner gol gl" style="--emd: 2">GOALS</div>
+                    <div class="goalsbanner gol gr" style="--emd: 2">GOALS</div>
+                    <div class="goalsbanner gol gl" style="--emd: 3">GOALS</div>
+                    <div class="goalsbanner gol gr" style="--emd: 3">GOALS</div>
+                </div>
+                <hr>
+                <div class="goalsdesc" style="--shine: 1">Curricula that meets international standards</div>
+                <div class="goalsdesc" style="--shine: 2">Research agenda responsive to societal needs;</div>
+                <div class="goalsdesc" style="--shine: 3">Active participation in collaborative/bi-lateral research presentation and publication;</div>
+                <div class="goalsdesc" style="--shine: 4">Strong partnerships and linkages among private and public organizations;</div>
+                <div class="goalsdesc" style="--shine: 5">Intensive internship and project deployment programs;</div>
+                <div class="goalsdesc" style="--shine: 6">Active involvement in extra- and co-curricular activities;</div>
+                <div class="goalsdesc" style="--shine: 7">Competent faculty and staff;</div>
+                <div class="goalsdesc" style="--shine: 8">State-of-the-art learning facilities;</div>
+                <div class="goalsdesc" style="--shine: 9">Active community extension and service-learning programs</div>
+                <div class="meetcsc home">THE JUKEBOX</div>
+                <div class="jukestage">
+                    <div class="juker">Play random music by pressing the Disk at the bottom right! <br> ----> Now Playing: <----</div>
+                    <marquee class="songer" direction="right">NO SONG</marquee>
+                    <span class="dj">by: Bax STAR</span>
+                </div>
+                <div class="meetcsc home">ABOUT GE10</div>
+                <div class="ge10descholder">
+                    <div class="missiondesc ge10d">GE10 (General Education 10) Better known as "Whole Person Education" is a mandatory minor subject taken by every course wherein it aims to develop you to be a true sillimanian as a whole, mentally, physically and spiritually through teaching its history, extracurricular activities, campus tours and etc. GE10 is usually unique for every college, but the gist of the subject is still maintained. For the College of Computer Studies, The Final Project is a bit more special.
+                    </div>
+                    <div class="missiondesc ge10d">You will be tasked to make an Online E-Journal! It is basically a website that'll hold journal entries/reflections! Yes, you'll be making your own website, it may sound difficult, but don't worry, You're allowed to use drag and drop site makers like wix and google sites. You'll also be taking CCS 1 as one of your majors which tackles web development so it can help with this project.</div>
+                    <div class="missiondesc ge10d"> Your website will hold journal reflections of your experiences in attending a series of events that correlate to Silliman's 5 C's, Church, Classroom, Culture, Community and Court ONLY during the first semester. Each C requires 8 points, and all respective events you attend for the 5 C's have a certain number of points depending on your participation, It scales from 1 pt. which means you were just part of the audience for the event, into 4pts. which means you played a very important role in the event, especially if you're the lead performer. </div>
+                    <div class="missiondesc ge10d">It is required that you must have 8 pts. per C, and that the events  you attend must go under the correct C in your website. Church require religious activities, Classroom require lectures, speeches, and workshops, Culture require Cultural events, or important traditional events, Community require reachouts and service events, and Court require sports events. Journal Reflections per event you attended are also required in your website as they make up the content of your site and they also have a format (to be provided) to be followed. </div>
+                    <div class="missiondesc ge10d">So far, That's all what you need to know for GE10 for now !</div>
+                </div>
+                <div class="meetcsc home">GE10 DTR</div>
+                
+                <div class="meetcsc home">GE10 SAMPLE SITES</div>
+                <div class="ge10holder">
+                    <img src="./gifs/My WPE ONline.gif" class="wpelogo" alt="">
+                    <a href="https://baxstar17.github.io/WPE-Online-Journal/" class="wpelink wannaccs">Here's my GE10 Journal for reference</a>
+                </div>
+                <div class="meetcsc home">Facilities AND PICS</div>
+            </div>
+            <div class="pg two">
+                <div class="meetcsc">
+                    CONFEDERATES STUDENT COUNCIL
+                    <button class="confed switch" onclick="switchLights('confed')">ON</button>
+                </div>
+                <div class="confed pic dark" id="off">
+                    <div class="icon" id="gov" onclick="showMod('prof', this.id)" style="top: 140px; left: 190px; --name:'Keonah Banabana'; --pos: 'Governor'; --pfp: url(https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-1/445376519_1683161179159671_4533948196947577497_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=xoiDTbxhYO0Q7kNvgFOM6Vg&_nc_ht=scontent.fdvo2-1.fna&gid=ATdsLiAGoFY_WRUxs6YRIEa&oh=00_AYA3hwESNy419VUSKyfzWXtkalntpRYaKwfW6JHkn9YJQQ&oe=66B0A4CC)">
+                    </div>
+                    <div class="icon" id="zalt" onclick="showMod('prof', this.id)" style="top: 105px; left: 310px; --name:'Zalthea Roleda'; --pos: 'Secretary'; --pfp: url(https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-1/353856631_3466956426874720_4592384597625746200_n.jpg?stp=cp6_dst-jpg_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=QleZ-We3Mk8Q7kNvgHyzsNj&_nc_ht=scontent.fdvo2-2.fna&gid=AaGPDqh7vjwjfADtVJA8HM6&oh=00_AYAOcVcxwG168H1yuBFzC1pBtBNNDrOwicL2q3GyenAs1A&oe=66B0C4DF);"></div>
+                    <div class="icon" id="gays" onclick="showMod('prof', this.id)" style="top: 135px; left: 250px;--name:'Gayselle Corsame'; --pos: 'Vice Governor';--pfp: url(https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-1/371512698_3471543446494373_1511674487594119012_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=JI6UBbLBDtwQ7kNvgFlmER-&_nc_ht=scontent.fdvo2-2.fna&oh=00_AYDM_ujyLvKM2pazsxib6rhC7q9ReOi0TRcyHTEJhFABrA&oe=66B0A6CD);"></div>
+                    <div class="icon" id="fiona" onclick="showMod('prof', this.id)" style="top: 130px; left: 110px;--name:'Fiona Cunanan'; --pos: 'Treasurer'; --pfp: url(https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-1/415064972_3771958106370278_8941126331554259982_n.jpg?stp=cp6_dst-jpg_p100x100&_nc_cat=110&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=CirmtvECkuQQ7kNvgGi9XbK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fdvo2-2.fna&oh=00_AYBeMXkKDqR4RhXmM0WKCSu-umj9kSE8lTf9WgVBOLyVQg&oe=66B0C6C6);"></div>
+                    <div class="icon" id="trixter" onclick="showMod('prof', this.id)" style="top: 100px; left: 45px;--name:'Trixter Gunot'; --pos: 'Auditor';  --pfp: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/453391404_1272046677288573_3328462629601560601_n.png?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=RRPz_BM8xpkQ7kNvgHdm4pc&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&gid=AGuF-7FTkL5ZyYOZvBrl4jU&oh=03_Q7cD1QFtonE2GV7THQ6nABYZtXXxUITZnr20ezO4kxj3Q9WGIQ&oe=66D25A09);"></div>
+                </div>
+                <div class="meetcsc">
+                    AESTHETICS COMMITTEE
+                    <button class="aesthetics switch" onclick="switchLights('aesthetics')">ON</button>
+                </div>
+                <div class="aesthetics pic dark" id="off">
+                    <div class="icon" id="heart" onclick="showMod('prof', this.id)" style="top: 160px; left: 230px;--name:'Heart Imbo'; --pos: 'Aesthetics Chairperson'; --pfp: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-1/439011332_2168571496812494_47512579178052842_n.jpg?stp=dst-jpg_p200x200&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHQq0mH0SlO1318VBYQIq15o1pITUcgraOjWkhNRyCto-FM7pKc7DGDQpG7nl6HZGvOqaW35xuNwhtoXTCIlYeU&_nc_ohc=7MlPNGG-es0Q7kNvgEv32fL&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYB75bwaScZzt-lSVoFZ8FfSgouoaaCbmdrx5VnCii3gqA&oe=66B127D1);"></div>
+                    <div class="icon" id="hiro" onclick="showMod('prof', this.id)" style="top: 160px; left: 130px;--name:'Hiroshi Villanueva'; --pos: 'Aesthetics Co-Chairperson'; --pfp: url(https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/394537127_1726183611162842_418648923837296953_n.jpg?stp=dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeH4Go_LaTzU1hSVEF1dalxacLUUO2ckZV5wtRQ7ZyRlXsXQE1jWo7ArzMLIBkoXDyyAHWiCKlRZgyZBrtb5jxvq&_nc_ohc=7lc6tHXXTz4Q7kNvgGaTRC9&_nc_ht=scontent.fcgy2-1.fna&gid=ADYr5Q8QvD7CaU58n84yXmM&oh=00_AYBYiFZYdGuqxagcihFZkSMRKSXGqDBr08h34fIg8GFd-g&oe=66B146DC);"></div>
+                </div>
+                <div class="meetcsc">
+                    INFOMEDIA COMMITTEE
+                    <button class="infomedia switch" onclick="switchLights('infomedia')">ON</button>
+                </div>
+                <div class="infomedia pic dark" id="off">
+                    <div class="icon" id="jasp" onclick="showMod('prof', this.id)" style="top: 90px; left: 210px;--name:'Jasper Miranda'; --pos: 'Infomedia Chairperson'; --pfp: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-6/452594292_2502599096591711_5311518978448931717_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHrY7Czm7uWXkK3HG-iqyLV5gxqcneL9_XmDGpyd4v39RigSerHigmleVHTAAF4znnhjGowuqT9UZ5bdjWmGHqP&_nc_ohc=e8UmMZfDil4Q7kNvgHprb27&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYAY9PsSQ5aR2n_Vj0LsRON60xYkVhSYZS8z93qjrFDkaA&oe=66B249F7);"></div>
+                </div>
+                <div class="meetcsc">
+                    PROGRAMS COMMITTEE
+                    <button class="programs switch" onclick="switchLights('programs')">ON</button>
+                </div>
+                <div class="programs pic dark" id="off">
+                    <div class="icon" id="chris" onclick="showMod('prof', this.id)" style="top: 100px; left: 230px;--name:'John Christian Rossell'; --pos: 'Programs Chairperson'; --pfp: url(https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-1/452584166_523394136699520_8157700023006588899_n.jpg?stp=dst-jpg_p200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEKFYJIOXDs04h9fM4YlwCPCAKnOKfSyAYIAqc4p9LIBquo0xbzyu4aXdBGKUML6TZECiSesrrihLflSUPtDSq8&_nc_ohc=-krQLhuyAoAQ7kNvgGmfAsZ&_nc_ht=scontent.fcgy2-1.fna&oh=00_AYD3z_AaHOheJGWjs_ZDdv6Bsxtb9CtssobWno2x0ZCJ7g&oe=66B2493E);"></div>
+                    <div class="icon" id="angie" onclick="showMod('prof', this.id)" style="top: 140px; left: 110px;--name:'Angelita Lee'; --pos: 'Programs Co-Chairperson'; --pfp: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-1/383495031_3505051373156399_6432383039186671216_n.jpg?stp=dst-jpg_p200x200&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeENZnUgLcc4hYVc7IDu1sNz9ZKVi1NyOh71kpWLU3I6HgOWq0jMBQJCBAzTIiChPTmmxDLYIJp8Re69yhx3FbfD&_nc_ohc=muUGxV7tmGYQ7kNvgHBoUg0&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYCec2eoTXmkdsGDUtepW_ROApr_3mY8FdqAOhZTEgGi_w&oe=66B2716A);"></div>
+                </div>
+                <div class="meetcsc">
+                    ATTENDANCE COMMITTEE
+                    <button class="attendance switch" onclick="switchLights('attendance')">ON</button>
+                </div>
+                <div class="attendance pic dark" id="off">
+                    <div class="icon" id="julia" onclick="showMod('prof', this.id)" style="top: 110px; left: 90px;--name:'Juliah Traces'; --pos: 'Attendance Chairperson'; --pfp: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-1/409800212_1183544499297070_3300587760581351835_n.jpg?stp=dst-jpg_p200x200&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeG48TTv0LxwQ1BbVXv1tDuaFXVPWhcRCroVdU9aFxEKuhWOtf5oQJwGduOzeufi_jgYtPIDEQQGrPfJEV8McsEz&_nc_ohc=Z5AASNIRg3gQ7kNvgE0nGXh&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYCcpeegzgHuSYFqQd0danMvbQPCl9mLltEN-1bCVR8hQw&oe=66B24F5C);"></div>
+                    <div class="icon" id="johan" onclick="showMod('prof', this.id)" style="top: 50px; left: 250px;--name:'Johanna Ecat'; --pos: 'Attendance Co-Chairperson'; --pfp: url(https://scontent.fcgy2-4.fna.fbcdn.net/v/t39.30808-1/448429789_787500310137886_7719697052974573726_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeGDfS1u1DRH_K4Lov-O8kr5TokXKYHgVCVOiRcpgeBUJaQQBDsuDSgyfCMY9wK2xineSPv_69y-_n8_2Qt2BOLF&_nc_ohc=UJcAFo8itDYQ7kNvgEWxJ7d&_nc_ht=scontent.fcgy2-4.fna&oh=00_AYC7CFN_YXbEezCICAfyD0-Jyjn_ZzOP1TlywHe0bNOYMQ&oe=66B23B69);"></div>
+                </div>
+                <div class="meetcsc">
+                    LOGISTICS COMMITTEE
+                    <button class="logistics switch" onclick="switchLights('logistics')">ON</button>
+                </div>
+                <div class="logistics pic dark" id="off">
+                    <div class="icon" id="ren" onclick="showMod('prof', this.id)" style="top: 120px; left: 250px;--name:'Renzel Alferez'; --pos: 'Logistics Chairperson'; --pfp: url(https://scontent.fcgy2-3.fna.fbcdn.net/v/t39.30808-1/434964323_3481188115506793_6307906431232151325_n.jpg?stp=dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeFZlW1TckoDSfqwALdaElrfOyURWF5j28Y7JRFYXmPbxuQ8bGf_zb-XsuaE8QjX-GDGxjqeixW6s7vbAtyUUfq-&_nc_ohc=jAHGjkNv_kQQ7kNvgEi4dzr&_nc_ht=scontent.fcgy2-3.fna&oh=00_AYClcIOe2fak6FdlUV7sRqpT-AqOz1tQMVQigDvhz73B5w&oe=66B2647D);"></div>
+                    <div class="icon" id="juano" onclick="showMod('prof', this.id)" style="top: 140px; left: 120px;--name:'Juan Carlo Giganan'; --pos: 'Logistics Co-Chairperson'; --pfp: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/452327338_519267363998636_3175163605254537546_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHBG_odk3I0bP_68xe_RO6jDzcVCO6LIvQPNxUI7osi9KknOCdaUyywZk8JcVljm2lHVPwfOOaU2nnCSQGvM3By&_nc_ohc=-4vzW7c5CO0Q7kNvgHOHZib&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QF_S_Sj6241k5wyzPJr8CwSedJ9hhPnA0ijeoiNJQwl4Q&oe=66D4005D);"></div>
+                </div>
+                <div class="meetcsc">
+                    FOOD COMMITTEE
+                    <button class="food switch" onclick="switchLights('food')">ON</button>
+                </div>
+                <div class="food pic dark" id="off">
+                    <div class="icon" id="jm" onclick="showMod('prof', this.id)" style="top: 110px; left: 110px;--name:'John Michael Revagorda'; --pos: 'Food Chairperson'; --pfp: url(https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-1/426920368_1490770754815065_6536096754671893386_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEsT8GYqXYkh0ryl2Udl_mKM3MFIAkKgpYzcwUgCQqClhacC-W5y_UEr4ajLAfQM0yB1iSsDYziMmhXeDjznuBu&_nc_ohc=jzqEdxUEYxMQ7kNvgGmMMt1&_nc_ht=scontent.fcgy2-1.fna&oh=00_AYBE5tFwilOIomVaQ8M4tGSSPCxLxGNYhe-v3SqR1cswxQ&oe=66B25A1F);"></div>
+                </div>
+                <div class="meetcsc">
+                    TECHNICALS COMMITTEE
+                    <button class="technicals switch" onclick="switchLights('technicals')">ON</button>
+                </div>
+                <div class="technicals pic dark" id="off">
+                    <div class="icon" id="bax" onclick="showMod('prof', this.id)" style="top: 30px; left: 280px;--name:'Baxter Bao-As'; --pos: 'Technicals Chairperson'; --pfp: url(https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/371772662_6753382514740508_7973915669967579921_n.jpg?stp=dst-jpg_s206x206&_nc_cat=100&ccb=1-7&_nc_sid=7a06f5&_nc_eui2=AeF9kS5MQ5B5hh1A5nNOnsZmF86q3u7i1qkXzqre7uLWqRZvLfsK_ONjx7HNfaVwdfmY6uzwpZiJ90jUpqvNfLx0&_nc_ohc=Po-JI02wzpIQ7kNvgGk-xkL&_nc_ht=scontent.fcgy2-1.fna&oh=00_AYDZQnC_wpGVAa7D9Vk5g51Tb1SLf7KgZYoylsw5ARfKlg&oe=66B25D62);"></div>
+                    <div class="icon" id="joshua" onclick="showMod('prof', this.id)" style="top: 80px; left: 60px;--name:'Joshua Briones'; --pos: 'Technicals Co-Chairperson'; --pfp: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-6/404843254_6856078671175247_8886614142748079979_n.jpg?stp=dst-jpg_s206x206&_nc_cat=103&ccb=1-7&_nc_sid=fe5ecc&_nc_eui2=AeGml27ApvjS4us_e950f59dYu7Tx7KnQ91i7tPHsqdD3eml7g3aewYkSru4yKsS3iGeeOtHTX_MpCoX13J1L5wn&_nc_ohc=JaVd3Ocl2JgQ7kNvgGOgpCV&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYDHFjiFn10xR46azxKAH9mPB2ydne0O2t9kdFqgZgVQVg&oe=66B23B0E);"></div>
+                </div>
+                <div class="meetcsc">
+                    SPORTS COMMITTEE
+                    <button class="sports switch" onclick="switchLights('sports')">ON</button>
+                </div>
+                <div class="sports pic dark" id="off">
+                    <div class="icon" id="josh" onclick="showMod('prof', this.id)" style="top: 185px; left: 330px;--name:'Josh Jugar'; --pos: 'Sports Chairperson'; --pfp: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-1/428655142_1573401423502983_8964651485127508645_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=109&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeG2fnliTaS6CN2GGR1srBiemW3sK9MAQXCZbewr0wBBcNgVS3oDbtv56jAWUWCpxI3m4WNVxDWEcu3vYoAOKzGS&_nc_ohc=ex3BuMJ7oJ0Q7kNvgGv8NKf&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYCPT5gyTQiF1Aac5V5UtLhyOqHhzokKC4VdqNOfsOJbzg&oe=66B26C85);"></div>
+                    <div class="icon" id="cyra" onclick="showMod('prof', this.id)" style="top: 110px; left: 50px;--name:'Cyra Dagoy'; --pos: 'Sports Co-Chairperson'; --pfp: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-1/337662255_1505277606666656_3129400245163910467_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeGEbQh-IHXTaiS2iY1YO9evGyGv5ZyTmrQbIa_lnJOatNp8t044Dyr0WfXIyetuW6alSj4zb0XHj0bbcbLQsQlR&_nc_ohc=g2lW4PECsbsQ7kNvgFY_WrL&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYCAOIuuX_ok1ubPXssCdXje30MbeBocGYrZ2MaBYBjKwQ&oe=66B26447);"></div>
+                    <div class="icon" id="kenji" onclick="showMod('prof', this.id)" style="top: 100px; left: 190px;--name:'Kenji Daymiel'; --pos: 'Sports Co-Chairperson'; --pfp: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-1/428631256_3763285427328686_6688819378316612384_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeG1SfRqh5JFNt2ArzRd2ykPacVH6vdI6oNpxUfq90jqg9Bemq6AcmVKfnbRD6lxL2szZht2PUJA_yvoeyl2sKZN&_nc_ohc=folGF_yCyscQ7kNvgH11qSX&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYAcuatVRhQllcYKNkjBLPkV5g-PL4p26FOK6Izl8xc6sQ&oe=66B258D0);"></div>
+                </div>
+                <div class="meetcsc">
+                    DOCUMENTATION COMMITTEE
+                    <button class="documentation switch" onclick="switchLights('documentation')">ON</button>
+                </div>
+                <div class="documentation pic dark" id="off">
+                    <div class="icon" id="ben" onclick="showMod('prof', this.id)" style="top: 210px; left: 220px;--name:'Ben Guarin'; --pos: 'Documentation Chairperson'; --pfp: url(https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-1/356207048_6232391946878961_7955140380567185223_n.jpg?stp=dst-jpg_p200x200&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHV6MMVRPrIBr_ZdqyC8z7Uv_ynplgEkmW__KemWASSZZDlsxqg2LvrO2YJIQhacsW_ZSnvSmxGCSOUaZFJwwZs&_nc_ohc=l_ipXxFON2UQ7kNvgGLOz7A&_nc_ht=scontent.fcgy2-1.fna&oh=00_AYDRg_RBJuKVcQ9_SvxfhmPJk8VTAuClol2sDT1BFxjn2Q&oe=66B2622A);"></div>
+                    <div class="icon" id="tyrone" onclick="showMod('prof', this.id)" style="top: 170px; left: 80px;--name:'Tyron Sanoy'; --pos: 'Documentation Co-Chairperson'; --pfp: url(https://scontent.fcgy2-4.fna.fbcdn.net/v/t39.30808-6/405325860_1760417961049148_7598709295198670615_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHbDCPkaU4mR4B2YmecdQjkm39tyNUbt8Gbf23I1Ru3wWVoR55cbcglHWPLJNVrLjoxMgd4tdZuAW-DScD_Jq3Q&_nc_ohc=-a1Lr8yhIUwQ7kNvgEr6Lyc&_nc_ht=scontent.fcgy2-4.fna&oh=00_AYCk9nkN8ca24ItOWj_3LNeCfVzl4DBcK3VXJJhPX5DNRg&oe=66B265AE);"></div>
+                </div>
+                <div class="meetcsc">
+                    MARKETING COMMITTEE
+                    <button class="marketing switch" onclick="switchLights('marketing')">ON</button>
+                </div>
+                <div class="marketing pic dark" id="off">
+                    <div class="icon" id="cheekie" onclick="showMod('prof', this.id)" style="top: 90px; left: 180px;--name:'Kassandra Aurelia'; --pos: 'Marketing Chairperson'; --pfp: url(https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-1/452472330_8573682209326094_978572780935972865_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeFmjfDpLl-kysUmL3hyuLkFBeVUs7l5pSgF5VSzuXmlKAa2cxwvXET13MX2uRfbUNFNUR1I5wVRN-nx8YU1DXfp&_nc_ohc=ZzB0_TFKdLMQ7kNvgGiyUom&_nc_ht=scontent.fcgy2-1.fna&oh=00_AYBujkc6zcZ8BooPl99Ja_2TsNrZIIpq0uxoYzmyRGvQng&oe=66B244AA);"></div>
+                </div>
+                <div class="meetcsc">
+                    CHEERING COMMITTEE
+                    <button class="cheer switch" onclick="switchLights('cheer')">ON</button>
+                </div>
+                <div class="cheer pic dark" id="off">
+                    <div class="icon" id="gyle" onclick="showMod('prof', this.id)" style="top: 120px; left: 180px;--name:'Gyle Dane Alam'; --pos: 'Cheer Chairperson'; --pfp: url(https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/441400873_2112622152445911_1714671984860770665_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeESTy0Q6W0RPbJeca_5cj8IKbHD3DwtscUpscPcPC2xxbJLctbDI63Sm0ru7LdMZUfIniPFNv-8-OmYMLmQwzvi&_nc_ohc=X5q1lFBz8iUQ7kNvgHrX4VV&_nc_ht=scontent.fcgy2-1.fna&oh=00_AYDRwbfql2p7CauXhKmpm3__2t64XcDDckdGkGshy0h0kQ&oe=66B261D2);"></div>
+                </div>
+            </div>
+            <div class="pg thr">
+                <div class="meetcsc events">
+                    JOIN THE FRESHMEN GC!
+                </div>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FConfederatesStudentCouncil%2Fposts%2Fpfbid06jHnbRbTc2GaQBANpSmpVhiKUptdaaZMgZHdcyHVX5isVBd8zSweugMy4vEufKRNl&show_text=true&width=500" width="100%" height="673" style="border:none; background-color: var(--monochrom); color: var(--monochrom); overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <div class="meetcsc events">
+                    LATEST NEWS FROM CONFED:
+                </div>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FConfederatesStudentCouncil%2Fposts%2Fpfbid03WDMHVNd9RCabZZC9MDNs9zCGBPRrfEdMzdgf7Dkh1qi8bkknSt529oewb9ScCa5l&show_text=true&width=500" width="100%" height="673" style="border:none; background-color: var(--monochrom); color: var(--monochrom);overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <div class="meetcsc events">BLAST FROM THE PAST</div>
+            </div>
+            <div class="pg four">
+                <div class="courses bscs" onclick="flipcard('bscs')">
+                    <div class="front cs">
+                        BSCS
+                    </div>
+                    <div class="back cs">
+                        Bachelor of Science in Computer Science (BSCS) is a four-year program that includes the study of computing concepts and theories, algorithmic foundations, and new developments in computing.
+                    </div>
+                </div>
+                <div class="board"></div>
+                <div class="courses bsit" onclick="flipcard('bsit')">
+                    <div class="front it">BSIT</div>
+                    <div class="back it">
+                        The Bachelor of Science in Information Technology (BSIT) is a four-year program that prepares students to be IT professionals well-versed on IT applications, including web, database, programming, and networking technologies.
+                    </div>
+                </div>
+                <div class="board"></div>
+                <div class="courses bsis" onclick="flipcard('bsis')">
+                    <div class="front is">BSIS</div>
+                    <div class="back is">
+                        Bachelor of Science in Information Systems is a four-year degree program which focuses on the design and implementation of computer-based information systems and other ICT solutions to address the demands in existing business processes.
+                    </div>
+                </div>
+                <div class="board"></div>
+                <div class="courses blis" onclick="flipcard('blis')">
+                    <div class="front lis">BLIS</div>
+                    <div class="back lis">
+                        Bachelor of Library and Information Sciences is a four-year degree program designed to prepare students for career opportunities in professional librarianship, research, training, publishing and book trade, public relations, consultancy, and information-related business.
+                    </div>
+                </div>
+                <div class="board"></div>
+                <div class="courses mis" onclick="flipcard('mis')">
+                    <div class="front mst">MIS</div>
+                    <div class="back mst">
+                        The Master of Information Systems (MIS) 2 year masterals program is designed to provide professionals in the Information Technology industry with advanced training in information systems.
+                    </div>
+                </div>
+                <div class="board"></div>
+            </div>
+        </section>
+    </main>
+    <!-- <section class="footer">
+
+    </section> -->
+    <div class="modalbg" id="modal"></div>
+    <div class="modal">
+        <button class="close" onclick="closeMod()">X</button>
+        <hr width="100">
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="foot"></div>
+        <a href="" class="travel"></a>
+    </div>
+    <aside class="themerack">
+        <button class="themebtn" id="w" onclick="themer('w')"></button>
+        <button class="themebtn" id="m" style="background-color: palegoldenrod;" onclick="themer('m')"></button>
+        <button class="themebtn" id="a" style="background-color: lightsalmon;" onclick="themer('a')"></button>
+        <button class="themebtn" id="n" style="background-color: darkslateblue;" onclick="themer('n')"></button>
+    </aside>
+    <aside class="cdrack">
+        <button class="cd" onclick="playJuke()"></button>
+    </aside>
+</body>
+</html>
