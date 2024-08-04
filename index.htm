@@ -21,7 +21,15 @@
             <div class="pg one">
                 <div class="mainwelcome">
                 </div>
-                <div class="meetcsc home">FAQ</div>
+                <section class="anchorge">
+                    <a href="#aaim" class="anchs" onclick="window.scrollTo(0, 1610);">College Aims</a>
+                    <a href="#ajuke" class="anchs">The Jukebox</a>
+                    <a href="#awpe" class="anchs">About GE10</a>
+                    <a href="#adtr" class="anchs">GE10 Dates to Remember</a>
+                    <a href="#awpesite" class="anchs">GE10 Sample Site</a>
+                    <a href="#afac" class="anchs">Facilities & Pics</a>
+                </section>
+                <div class="meetcsc home" id="afaq">FAQ</div>
                 <div class="faqholder">
                     <details class="faqs">
                         <summary class="quest">Where can I contact CCS?</summary>
@@ -117,7 +125,7 @@
                     <div class="infoblock" id="bl" style="--n: 19;--bgx: 2; --bgy: 1;"></div>
                     <div class="infoblock" id="bl" style="--n: 20;--bgx: 1; --bgy: 1;"></div>
                 </section>
-                <div class="meetcsc home">COLLEGE AIMS</div>
+                <div class="meetcsc home" id="aaims">COLLEGE AIMS</div>
                 <br>
                 <div class="visionbanner">VISION</div>
                 <hr>
@@ -150,13 +158,13 @@
                 <div class="goalsdesc" style="--shine: 7">Competent faculty and staff;</div>
                 <div class="goalsdesc" style="--shine: 8">State-of-the-art learning facilities;</div>
                 <div class="goalsdesc" style="--shine: 9">Active community extension and service-learning programs</div>
-                <div class="meetcsc home">THE JUKEBOX</div>
+                <div class="meetcsc home" id="ajuke">THE JUKEBOX</div>
                 <div class="jukestage">
                     <div class="juker">Play random music by pressing the Disk at the bottom right! <br> ----> Now Playing: <----</div>
                     <marquee class="songer" direction="right">NO SONG</marquee>
                     <span class="dj">by: Bax STAR</span>
                 </div>
-                <div class="meetcsc home">ABOUT GE10</div>
+                <div class="meetcsc home" id="awpe">ABOUT GE10</div>
                 <div class="ge10descholder">
                     <div class="missiondesc ge10d">GE10 (General Education 10) Better known as "Whole Person Education" is a mandatory minor subject taken by every course wherein it aims to develop you to be a true sillimanian as a whole, mentally, physically and spiritually through teaching its history, extracurricular activities, campus tours and etc. GE10 is usually unique for every college, but the gist of the subject is still maintained. For the College of Computer Studies, The Final Project is a bit more special.
                     </div>
@@ -165,8 +173,8 @@
                     <div class="missiondesc ge10d">It is required that you must have 8 pts. per C, and that the events  you attend must go under the correct C in your website. Church require religious activities, Classroom require lectures, speeches, and workshops, Culture require Cultural events, or important traditional events, Community require reachouts and service events, and Court require sports events. Journal Reflections per event you attended are also required in your website as they make up the content of your site and they also have a format (to be provided) to be followed. </div>
                     <div class="missiondesc ge10d">So far, That's all what you need to know for GE10 for now !</div>
                 </div>
-                <!-- <div class="meetcsc home">GE10 DTR</div>
-                <section class="dtr slideshow" style="--dur: 20s; --slids: 10;">
+                <div class="meetcsc home" id="adtr">GE10 DATES</div>
+                <section class="dtr slideshow" style="--dur: 40s; --slids: 10;">
                     <div class="CCpics slide" style="--sl:0"><img src="./gifs/2.png" width="100%" height="100%" alt=""></div>
                     <div class="CCpics slide" style="--sl:1"><img src="./gifs/3.png" width="100%" height="100%" alt=""></div>
                     <div class="CCpics slide" style="--sl:2"><img src="./gifs/4.png" width="100%" height="100%" alt=""></div>
@@ -177,13 +185,13 @@
                     <div class="CCpics slide" style="--sl:7"><img src="./gifs/9.png" width="100%" height="100%" alt=""></div>
                     <div class="CCpics slide" style="--sl:8"><img src="./gifs/10.png" width="100%" height="100%" alt=""></div>
                     <div class="CCpics slide" style="--sl:9"><img src="./gifs/11.png" width="100%" height="100%" alt=""></div>
-                </section> -->
-                <div class="meetcsc home">GE10 SAMPLE SITES</div>
+                </section>
+                <div class="meetcsc home" id="awpesite">GE10 SAMPLE SITES</div>
                 <div class="ge10holder">
                     <img src="./gifs/My WPE ONline.gif" class="wpelogo" alt="">
                     <a href="https://baxstar17.github.io/WPE-Online-Journal/" class="wpelink wannaccs">Here's my GE10 Journal for reference</a>
                 </div>
-                <div class="meetcsc home">Facilities AND PICS</div>
+                <div class="meetcsc home" id="afac">Facilities AND PICS</div>
                 <section class="CC slideshow" style="--dur: 20s; --slids: 5;">
                     <div class="CCpics slide" style="--sl:0"><img src="./gifs/UCS (1).jpg" width="100%" height="100%" alt=""></div>
                     <div class="CCpics slide" style="--sl:1"><img src="./gifs/UCS (2).jpg" width="100%" height="100%" alt=""></div>
@@ -191,6 +199,7 @@
                     <div class="CCpics slide" style="--sl:3"><img src="./gifs/UCS (4).jpg" width="100%" height="100%" alt=""></div>
                     <div class="CCpics slide" style="--sl:4"><img src="./gifs/UCS (5).jpg" width="100%" height="100%" alt=""></div>
                 </section>
+                <img src="./gifs/upbtn.png" width="30" height="30" alt="" onclick="window.scrollTo(0, 0);" style="align-self: center; margin: 10px; cursor: pointer;">
             </div>
             <div class="pg two">
                 <div class="meetcsc">
@@ -290,6 +299,7 @@
                 <div class="cheer pic dark" id="off">
                     <div class="icon" id="gyle" onclick="showMod('prof', this.id)" style="top: 120px; left: 180px;--name:'Gyle Dane Alam'; --pos: 'Cheer Chairperson'; --pfp: url(https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/441400873_2112622152445911_1714671984860770665_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeESTy0Q6W0RPbJeca_5cj8IKbHD3DwtscUpscPcPC2xxbJLctbDI63Sm0ru7LdMZUfIniPFNv-8-OmYMLmQwzvi&_nc_ohc=X5q1lFBz8iUQ7kNvgHrX4VV&_nc_ht=scontent.fcgy2-1.fna&oh=00_AYDRwbfql2p7CauXhKmpm3__2t64XcDDckdGkGshy0h0kQ&oe=66B261D2);"></div>
                 </div>
+                <img src="./gifs/upbtn.png" width="30" height="30" alt="" onclick="window.scrollTo(0, 0);" style="align-self: center; margin: 10px; cursor: pointer;">
             </div>
             <div class="pg thr">
                 <div class="meetcsc events">
@@ -300,6 +310,7 @@
                     LATEST NEWS FROM CONFED:
                 </div>
                 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FConfederatesStudentCouncil%2Fposts%2Fpfbid03WDMHVNd9RCabZZC9MDNs9zCGBPRrfEdMzdgf7Dkh1qi8bkknSt529oewb9ScCa5l&show_text=true&width=500" width="100%" height="673" style="border:none; background-color: var(--lightprim); color: var(--lightprim);overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <img src="./gifs/upbtn.png" width="30" height="30" alt="" onclick="window.scrollTo(0, 0);" style="align-self: center; margin: 10px; cursor: pointer;">
             </div>
             <div class="pg four">
                 <div class="courses bscs" onclick="flipcard('bscs')">
@@ -349,6 +360,7 @@
                 <div class="board">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/t7kVDxGMVM8?si=IHOp72EMMPYdmyV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+                <img src="./gifs/upbtn.png" width="30" height="30" alt="" onclick="window.scrollTo(0, 0);" style="align-self: center; margin: 10px; cursor: pointer;">
             </div>
         </section>
     </main>
