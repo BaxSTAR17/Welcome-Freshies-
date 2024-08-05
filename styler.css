@@ -149,7 +149,7 @@ section.keyrack {
     width: 400px;
     height: 100px;
     box-shadow: 0 0 5px 0 var(--monocont), 3px 3px 8px 4px var(--monocont);
-    background-color: #202420;
+    background-color: var(--monocont);
     animation: beat var(--bpm) infinite linear;
 }
 
@@ -653,7 +653,8 @@ p.answer {
     font-size: 1em;
 }
 
-.ge10d {background-color: var(--primT);}
+.ge10d {background-color: var(--primT); opacity: 0; transition: all 0.5s ease-in-out}
+.awake {opacity: 1;}
 
 .ge10holder {
     background: linear-gradient(217deg, rgba(0, 217, 217, .8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(217, 217, 0, .8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(217, 0, 217, .8), rgba(0, 0, 255, 0) 70.71%);
@@ -666,14 +667,14 @@ p.answer {
     align-self: center;
     display: flex;
     flex-direction: column;
-}
+} .carlos { background: none; background-color: white;}
 
 .wpelogo {
     width: 50%;
     align-self: center;
     box-shadow: 4px 4px 4px 4px black;
     border-radius: 80px;
-}
+} .cllogo {background-color: white; border: 2px solid black; font-family: serif; font-size: 8em; font-weight: bold; text-align: center;}
 
 .wpelink {
     text-decoration: none;
@@ -685,7 +686,9 @@ p.answer {
     border-radius: 10px;
     margin: 10px;
     transition: all 0.2s ease-in-out;
-} .wpelink:hover { border: 1px solid white;}
+} .wpelink:hover { border: 1px solid white;
+} .cllink { color: black; border: 2px solid black;
+} .cllink:hover { background-color: black; color: white; border: 2px solid white;}
 
 .modal {
     position: fixed;
@@ -731,7 +734,6 @@ p.answer {
 .head {
     width: 200px;
     height: 200px;
-    border: 1px solid red;
     box-sizing: border-box;
     align-self: center;
     background-size: cover;
@@ -841,3 +843,26 @@ p.answer {
     border-top: 8px inset var(--primT);
     transition: all 0.2s ease-in-out;
 } .anchs:hover {background-color: var(--primT); border-color: var(--lightprim);}
+
+.preloader {
+    width: 100dvw;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: steelblue;
+    background-image: url(./gifs/CCS\ \(1\).gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+    animation: deload 4s forwards;
+}
+@keyframes deload {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    90% {opacity: 0;}
+    100%{z-index: -3;}
+}
+
+.thr {overflow-x: hidden;}

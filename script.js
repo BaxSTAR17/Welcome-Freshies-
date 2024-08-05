@@ -409,6 +409,15 @@ window.addEventListener("load", function () {
         descr.style.setProperty('--dx', `${x}px`);
         descr.style.setProperty('--dy', `${y}px`);
     });
+    const watcher = new IntersectionObserver(
+        (elements) => {
+            elements.forEach((el) => {
+                if (el.isIntersecting) el.target.classList.add("awake")
+                else el.target.classList.remove("awake")
+            })
+        }
+    )
+    document.querySelectorAll(".ge10d").forEach((el) => watcher.observe(el));
     chosen = messages[Math.floor(Math.random() * messages.length)];
     setInterval(function () { if (typing == true) {type(chosen)}}, 80);
     setInterval(function() { if (typing == false) {deleting(chosen)}}, 90);
