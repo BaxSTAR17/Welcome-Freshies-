@@ -858,6 +858,7 @@ p.answer {
     z-index: 100;
     animation: deload 4s forwards;
 }
+
 @keyframes deload {
     0% {opacity: 1;}
     50% {opacity: 1;}
