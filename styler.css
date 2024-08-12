@@ -208,7 +208,7 @@ div.pg {
     display: none;
     flex-direction: column;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 0px 3px 5px black;
+    box-shadow: 0px 0px 3px 5px var(--monocont);
     transition: all 1s ease-in-out;
     translate: 0px -400px;
     overflow-y: hidden;
@@ -393,6 +393,7 @@ button.switch {
     height: 40px;
     background-size: cover;
     border: 4px outset var(--monochrom);
+    background-color: var(--prim);
     background-image: var(--pfp);
     cursor: pointer;
     transform: none;
@@ -733,7 +734,8 @@ p.answer {
 
 .head {
     width: 200px;
-    height: 200px;
+    height: fit-content;
+    min-height: 200px;
     box-sizing: border-box;
     align-self: center;
     background-size: cover;
