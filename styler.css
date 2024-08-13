@@ -349,14 +349,6 @@ button.switch {
 }
 
 .back { transform: rotateY(180deg); }
-
-.board {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    position: relative;
-}
-
 .pic {
     width: 100%;
     height: 250px;
