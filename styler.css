@@ -376,6 +376,7 @@ button.switch {
 .documentation { background-image: url(./gifs/DOCIMENTATION.gif); }
 .marketing { background-image: url(./gifs/MARKETING.gif); }
 .cheer { background-image: url(./gifs/CHEERING.gif); }
+.faith { background-image: url(./gifs/FAITH.gif);}
 
 .dark:after {
     content: '';
@@ -861,11 +862,37 @@ p.answer {
     animation: deload 4s forwards;
 }
 
+.loader {
+    width: 100dvw;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000bb;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .loader:before {
+    content: '';
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border-radius: 500px;
+    border: 50px ridge black;
+    animation: load 1.2s linear infinite;
+}
+
 @keyframes deload {
     0% {opacity: 1;}
     50% {opacity: 1;}
-    90% {opacity: 0;}
-    100%{z-index: -3;}
+    95% {opacity: 0;}
+    100%{display: none;z-index: -3;}
 }
+@keyframes load {from{rotate: 0deg;}to{rotate: 1turn;}}
 
 .thr {overflow-x: hidden;}

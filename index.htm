@@ -304,6 +304,13 @@
                     <div class="icon" id="gyle" onclick="showMod('prof', this.id)" style="top: 120px; left: 180px;--name:'Gyle Dane Alam'; --pos: 'Cheer Chairperson'; --pfp: url(./gifs/Cheer\ Committee/GYLE\ CHEER.png);"></div>
                     <div class="icon" id="joey" onclick="showMod('prof', this.id)" style="top: 80px; left: 180px;--name:'Ernest Theodore Rojo'; --pos: 'Cheer Co-Chairperson'; --pfp: url(./gifs/Cheer\ Committee/JOEY\ CHEER.png);"></div>
                 </div>
+                <div class="meetcsc">
+                    FAITH COMMITTEE
+                    <button class="faith switch" onclick="switchLights('faith')">ON</button>
+                </div>
+                <div class="faith pic dark" id="off">
+                    <div class="icon" id="pat" onclick="showMod('prof', this.id)" style="top: 70px; left: 180px;--name:'Patrick Patrimonio'; --pos: 'Marketing Chairperson'; --pfp: url(./gifs/faith/patrick.JPG);"></div>
+                </div>
                 <img src="./gifs/upbtn.png" width="30" height="30" alt="" onclick="window.scrollTo(0, 0);" style="align-self: center; margin: 10px; cursor: pointer;">
             </div>
             <div class="pg thr">
@@ -396,6 +403,7 @@
     <aside class="cdrack">
         <button class="cd" onclick="playJuke()"></button>
     </aside>
+    <section class="loader"></section>
     <section class="preloader"></section>
 </body>
 </html>

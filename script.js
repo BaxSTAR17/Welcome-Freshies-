@@ -393,6 +393,7 @@ function type(msg) {
 window.addEventListener("load", function () {
     blink = false;
     msgBox = document.getElementById("msgbox");
+    document.querySelector(".loader").style.display = "none";
     setInterval(function () {caratBlink();}, 300);
     document.querySelectorAll(".dark").forEach(function (el) {
         el.addEventListener("mousemove", function(e) {
